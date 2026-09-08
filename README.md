@@ -1,4 +1,4 @@
-# Face Recognition Employee Management & Analytics Platform
+#  AI Face Recognition Employee Management & Analytics Platform
 
 <div align="center">
 
@@ -852,20 +852,4 @@ erDiagram
 
 ---
 
-## 👨‍💻 Author
 
-<div align="center">
-
-### **Vijay Rajput**
-*AI/ML Engineer • Computer Vision • Deep Learning Systems*
-
-[![GitHub](https://img.shields.io/badge/GitHub-VijayRajput4455-181717?style=for-the-badge&logo=github)](https://github.com/VijayRajput4455)
-[![Repository](https://img.shields.io/badge/Repository-face--recognition--attendance--system-blue?style=for-the-badge&logo=github)](https://github.com/VijayRajput4455/face-recognition-attendance-system)
-
-</div>
-
----
-
-## 📄 License
-
-Information regarding software licensing will be added. Please refer to the repository for updates.
