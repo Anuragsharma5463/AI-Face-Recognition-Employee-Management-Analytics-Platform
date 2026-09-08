@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Platform Cover](docs/cover.png)
+![Platform Cover])
 
 <br/>
 
