@@ -1,0 +1,88 @@
+# ==========================================================
+# PRODUCTION CONFIGURATION OVERRIDE
+#
+# Usage:
+#   docker compose -f deploy/docker-compose.yml -f deploy/docker-compose.prod.yml up --build -d
+# ==========================================================
+
+services:
+
+  # ========================================================
+  # Frontend Web App (Nginx on Port 80 / 5173)
+  # ========================================================
+  frontend:
+    ports:
+      - "5173:80"
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  # ========================================================
+  # FastAPI API (Gunicorn / Production settings)
+  # ========================================================
+  api:
+    ports:
+      - "8000:8000"
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  # ========================================================
+  # Worker
+  # ========================================================
+  worker:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  # ========================================================
+  # Backend Services
+  # ========================================================
+  postgres:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  rabbitmq:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  milvus:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  etcd:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  minio:
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "100m"
+        max-file: "10"
